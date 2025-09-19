@@ -2,3 +2,90 @@ Base de données initialisée
 Serveur démarré sur le port 3000
 Health check: http://localhost:3000/health
 API Users: http://localhost:3000/api/users
+{
+  timestamp: '2025-09-19T13:16:30.857Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-09-19T13:16:40.392Z',
+  level: 'info',
+  message: 'Listes des utilisateurs récupérée',
+  endpoint: 'GET /api/users',
+  count: 0
+}
+{
+  timestamp: '2025-09-19T13:22:58.882Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-09-19T13:23:04.899Z',
+  level: 'info',
+  message: 'Listes des utilisateurs récupérée',
+  endpoint: 'GET /api/users',
+  count: 0
+}
+{
+  timestamp: '2025-09-19T13:23:14.599Z',
+  level: 'info',
+  message: 'Utilisateur créé',
+  endpoint: 'POST /api/users',
+  uuid: '984a4977-2166-402f-9da9-b661c1fb1cd8'
+}
+{
+  timestamp: '2025-09-19T13:23:38.547Z',
+  level: 'info',
+  message: 'Utilisateur créé',
+  endpoint: 'POST /api/users',
+  uuid: '9741b8da-1046-4f5c-bdc1-a49a0e8ef50b'
+}
+{
+  timestamp: '2025-09-19T13:23:45.228Z',
+  level: 'info',
+  message: 'Listes des utilisateurs récupérée',
+  endpoint: 'GET /api/users',
+  count: 2
+}
+{
+  timestamp: '2025-09-19T13:23:52.788Z',
+  level: 'info',
+  message: 'Utilisateur récupéré',
+  endpoint: 'GET /api/users/984a4977-2166-402f-9da9-b661c1fb1cd8',
+  uuid: '984a4977-2166-402f-9da9-b661c1fb1cd8'
+}
+{
+  timestamp: '2025-09-19T13:24:00.368Z',
+  level: 'info',
+  message: 'Utilisateur mis à jour',
+  uuid: '984a4977-2166-402f-9da9-b661c1fb1cd8'
+}
+{
+  timestamp: '2025-09-19T13:24:11.096Z',
+  level: 'info',
+  message: 'Utilisateur récupéré',
+  endpoint: 'GET /api/users/984a4977-2166-402f-9da9-b661c1fb1cd8',
+  uuid: '984a4977-2166-402f-9da9-b661c1fb1cd8'
+}
+{
+  timestamp: '2025-09-19T13:24:20.550Z',
+  level: 'info',
+  message: 'Utilisateur supprimé',
+  endpoint: 'DELETE /api/users/9741b8da-1046-4f5c-bdc1-a49a0e8ef50b'
+}
+{
+  timestamp: '2025-09-19T13:24:37.158Z',
+  level: 'info',
+  message: 'Listes des utilisateurs récupérée',
+  endpoint: 'GET /api/users',
+  count: 1
+}
+{
+  timestamp: '2025-09-19T13:25:01.637Z',
+  level: 'warn',
+  message: "Validation échouée pour la création d'utilisateur",
+  endpoint: 'POST /api/users',
+  data: { fullname: '', age: 'abc', study_level: 'Master' }
+}
