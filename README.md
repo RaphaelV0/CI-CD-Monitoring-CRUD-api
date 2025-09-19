@@ -25,6 +25,13 @@ docker-compose up -d
 docker-compose ps
 ```
 
+## Accès à l'application
+
+Une fois démarrée, l'application est accessible sur :
+- **Health check** : http://localhost:8080/health
+- **API Users** : http://localhost:8080/api/users
+- **Test** : Utilisez Postman ou curl pour tester les endpoints
+
 ## Variables d'environnement
 
 ### Base de données (optionnelles)
