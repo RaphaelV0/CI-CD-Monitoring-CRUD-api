@@ -99,4 +99,4 @@ docker-compose exec app cat /var/logs/crud/app.log
 ```bash
 docker-compose exec app cat /var/logs/crud/access.log
 ```
-**Prêt pour CI/CD et monitoring !** 🚀
+**Prêt pour CI/CD et monitoring !**
