@@ -98,5 +98,6 @@ docker-compose exec app cat /var/logs/crud/app.log
 ### Consulter les logs Nginx
 ```bash
 docker-compose exec app cat /var/logs/crud/access.log
+docker-compose exec app cat /var/logs/crud/error.log
 ```
 **Prêt pour CI/CD et monitoring !**
