@@ -3,89 +3,272 @@ Serveur démarré sur le port 3000
 Health check: http://localhost:3000/health
 API Users: http://localhost:3000/api/users
 {
-  timestamp: '2025-09-19T13:16:30.857Z',
+  timestamp: '2025-11-04T19:18:12.369Z',
   level: 'info',
   message: 'Health check réussi',
   endpoint: '/health'
 }
 {
-  timestamp: '2025-09-19T13:16:40.392Z',
-  level: 'info',
-  message: 'Listes des utilisateurs récupérée',
-  endpoint: 'GET /api/users',
-  count: 0
-}
-{
-  timestamp: '2025-09-19T13:22:58.882Z',
+  timestamp: '2025-11-04T19:18:42.754Z',
   level: 'info',
   message: 'Health check réussi',
   endpoint: '/health'
 }
 {
-  timestamp: '2025-09-19T13:23:04.899Z',
+  timestamp: '2025-11-04T19:19:13.101Z',
   level: 'info',
-  message: 'Listes des utilisateurs récupérée',
-  endpoint: 'GET /api/users',
-  count: 0
+  message: 'Health check réussi',
+  endpoint: '/health'
 }
 {
-  timestamp: '2025-09-19T13:23:14.599Z',
+  timestamp: '2025-11-04T19:19:43.465Z',
   level: 'info',
-  message: 'Utilisateur créé',
-  endpoint: 'POST /api/users',
-  uuid: '984a4977-2166-402f-9da9-b661c1fb1cd8'
+  message: 'Health check réussi',
+  endpoint: '/health'
 }
 {
-  timestamp: '2025-09-19T13:23:38.547Z',
+  timestamp: '2025-11-04T19:20:13.805Z',
   level: 'info',
-  message: 'Utilisateur créé',
-  endpoint: 'POST /api/users',
-  uuid: '9741b8da-1046-4f5c-bdc1-a49a0e8ef50b'
+  message: 'Health check réussi',
+  endpoint: '/health'
 }
 {
-  timestamp: '2025-09-19T13:23:45.228Z',
+  timestamp: '2025-11-04T19:20:44.134Z',
   level: 'info',
-  message: 'Listes des utilisateurs récupérée',
-  endpoint: 'GET /api/users',
-  count: 2
+  message: 'Health check réussi',
+  endpoint: '/health'
 }
 {
-  timestamp: '2025-09-19T13:23:52.788Z',
+  timestamp: '2025-11-04T19:21:14.497Z',
   level: 'info',
-  message: 'Utilisateur récupéré',
-  endpoint: 'GET /api/users/984a4977-2166-402f-9da9-b661c1fb1cd8',
-  uuid: '984a4977-2166-402f-9da9-b661c1fb1cd8'
+  message: 'Health check réussi',
+  endpoint: '/health'
 }
 {
-  timestamp: '2025-09-19T13:24:00.368Z',
+  timestamp: '2025-11-04T19:21:44.853Z',
   level: 'info',
-  message: 'Utilisateur mis à jour',
-  uuid: '984a4977-2166-402f-9da9-b661c1fb1cd8'
+  message: 'Health check réussi',
+  endpoint: '/health'
 }
 {
-  timestamp: '2025-09-19T13:24:11.096Z',
+  timestamp: '2025-11-04T19:22:15.221Z',
   level: 'info',
-  message: 'Utilisateur récupéré',
-  endpoint: 'GET /api/users/984a4977-2166-402f-9da9-b661c1fb1cd8',
-  uuid: '984a4977-2166-402f-9da9-b661c1fb1cd8'
+  message: 'Health check réussi',
+  endpoint: '/health'
 }
 {
-  timestamp: '2025-09-19T13:24:20.550Z',
+  timestamp: '2025-11-04T19:22:45.544Z',
   level: 'info',
-  message: 'Utilisateur supprimé',
-  endpoint: 'DELETE /api/users/9741b8da-1046-4f5c-bdc1-a49a0e8ef50b'
+  message: 'Health check réussi',
+  endpoint: '/health'
 }
 {
-  timestamp: '2025-09-19T13:24:37.158Z',
+  timestamp: '2025-11-04T19:23:15.899Z',
   level: 'info',
-  message: 'Listes des utilisateurs récupérée',
-  endpoint: 'GET /api/users',
-  count: 1
+  message: 'Health check réussi',
+  endpoint: '/health'
 }
 {
-  timestamp: '2025-09-19T13:25:01.637Z',
-  level: 'warn',
-  message: "Validation échouée pour la création d'utilisateur",
-  endpoint: 'POST /api/users',
-  data: { fullname: '', age: 'abc', study_level: 'Master' }
+  timestamp: '2025-11-04T19:23:46.220Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:24:16.591Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:24:46.942Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:25:17.421Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:25:47.771Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:26:18.115Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:26:48.477Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:27:18.845Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:27:49.165Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:28:19.496Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:28:49.830Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:29:20.113Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:29:50.521Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:30:20.835Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:30:51.133Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:31:21.414Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:31:51.737Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:32:22.053Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:32:52.328Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:33:22.596Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:33:52.840Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:34:23.080Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:34:53.328Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:35:23.552Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:35:53.808Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:36:24.087Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:36:54.353Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:37:24.616Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:37:54.873Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:38:25.143Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:38:55.396Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:39:25.631Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:39:55.898Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
+}
+{
+  timestamp: '2025-11-04T19:40:26.136Z',
+  level: 'info',
+  message: 'Health check réussi',
+  endpoint: '/health'
 }
