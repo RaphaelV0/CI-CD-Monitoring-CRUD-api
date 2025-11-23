@@ -1,0 +1,51 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: crud-api
+  labels:
+    cloud.googleapis.com/location: GCP_REGION
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: '1'
+        autoscaling.knative.dev/maxScale: '10'
+        run.googleapis.com/cloudsql-instances: DB_INSTANCE_CONNECTION_NAME
+    spec:
+      containers:
+      - name: crud-api
+        image: DOCKERHUB_USERNAME/crud-api:VERSION
+        ports:
+        - containerPort: 80
+        env:
+        - name: PORT
+          value: '3000'
+        - name: DB_HOST
+          value: '127.0.0.1'
+        - name: DB_USER
+          value: 'DB_USER'
+        - name: DB_PASSWORD
+          value: 'DB_PASSWORD'
+        - name: DB_NAME
+          value: 'DB_NAME'
+        - name: LOG_DIR
+          value: '/var/logs/crud'
+        resources:
+          limits:
+            cpu: '1'
+            memory: 512Mi
+      - name: fluent-bit
+        image: DOCKERHUB_USERNAME/crud-fluent-bit:VERSION
+        env:
+        - name: LOKI_HOST
+          value: 'LOKI_HOST'
+        - name: LOKI_PORT
+          value: 'LOKI_PORT'
+        - name: LOKI_JOB_LABEL
+          value: 'crud-api-cloudrun'
+        - name: HOSTNAME
+          value: 'cloudrun'
+        resources:
+          limits:
+            cpu: '0.5'
+            memory: 256Mi
