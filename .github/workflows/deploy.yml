@@ -107,10 +107,13 @@ jobs:
 
       # 9. Déploiement sur Cloud Run
       - name: Deploy to Cloud Run
+        uses: google-github-actions/deploy-cloudrun@v2
+        with:
+          metadata: cloud-run-service.yaml
+          region: ${{ env.GCP_REGION }}
+
+      - name: Allow public access
         run: |
-          # Déploiement du service
-          gcloud run services replace cloud-run-service.yaml --region ${{ env.GCP_REGION }}
-          # Autorisation publique
           gcloud run services add-iam-policy-binding ${{ env.SERVICE_NAME }} \
             --region=${{ env.GCP_REGION }} \
             --member="allUsers" \
