@@ -100,7 +100,7 @@ jobs:
           sed -i "s|DB_PASSWORD|${{ secrets.DB_PASSWORD }}|g" cloud-run-service.yaml
           sed -i "s|DB_NAME|${{ secrets.DB_NAME }}|g" cloud-run-service.yaml
           sed -i "s|LOKI_HOST|${{ secrets.LOKI_HOST }}|g" cloud-run-service.yaml
-          sed -i "s|LOKI_PORT|${{ secrets.LOKI_PORT }}|g" cloud-run-service.yaml
+          sed -i "s|\"LOKI_PORT\"|\"${{ secrets.LOKI_PORT }}\"|g" cloud-run-service.yaml
           
           echo "Configuration Cloud Run mise à jour :"
           cat cloud-run-service.yaml

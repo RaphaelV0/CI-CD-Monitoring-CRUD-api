@@ -24,11 +24,11 @@ spec:
         - name: DB_HOST
           value: '127.0.0.1'
         - name: DB_USER
-          value: 'DB_USER'
+          value: DB_USER
         - name: DB_PASSWORD
-          value: 'DB_PASSWORD'
+          value: DB_PASSWORD
         - name: DB_NAME
-          value: 'DB_NAME'
+          value: DB_NAME
         - name: LOG_DIR
           value: '/var/logs/crud'
         resources:
@@ -39,9 +39,9 @@ spec:
         image: DOCKERHUB_USERNAME/crud-fluent-bit:VERSION
         env:
         - name: LOKI_HOST
-          value: 'LOKI_HOST'
+          value: LOKI_HOST
         - name: LOKI_PORT
-          value: 'LOKI_PORT'
+          value: "LOKI_PORT"
         - name: LOKI_JOB_LABEL
           value: 'crud-api-cloudrun'
         - name: HOSTNAME
