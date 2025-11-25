@@ -72,8 +72,23 @@ jobs:
           wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
           chmod +x cloud_sql_proxy
           ./cloud_sql_proxy -instances=${{ secrets.DB_INSTANCE_CONNECTION_NAME }}=tcp:3306 &
-          sleep 10
-          echo "✅ Cloud SQL Proxy started"
+          
+          # Attendre que le proxy soit prêt
+          echo "Waiting for Cloud SQL Proxy to be ready..."
+          for i in {1..30}; do
+            if nc -z 127.0.0.1 3306 2>/dev/null; then
+              echo "✅ Cloud SQL Proxy is ready!"
+              break
+            fi
+            echo "Attempt $i/30: Proxy not ready yet..."
+            sleep 2
+          done
+          
+          # Vérification finale
+          if ! nc -z 127.0.0.1 3306 2>/dev/null; then
+            echo "❌ Cloud SQL Proxy failed to start"
+            exit 1
+          fi
 
       - name: Run database migrations
         run: |
