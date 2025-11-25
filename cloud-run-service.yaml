@@ -17,10 +17,8 @@ spec:
       - name: crud-api
         image: DOCKERHUB_USERNAME/crud-api:VERSION
         ports:
-        - containerPort: 80
+        - containerPort: 3000
         env:
-        - name: PORT
-          value: '3000'
         - name: DB_HOST
           value: '127.0.0.1'
         - name: DB_USER
