@@ -96,9 +96,9 @@ jobs:
           sed -i "s|DB_INSTANCE_CONNECTION_NAME|${{ secrets.DB_INSTANCE_CONNECTION_NAME }}|g" cloud-run-service.yaml
           sed -i "s|DOCKERHUB_USERNAME|${{ env.DOCKERHUB_USERNAME }}|g" cloud-run-service.yaml
           sed -i "s|VERSION|${{ steps.version.outputs.version }}|g" cloud-run-service.yaml
-          sed -i "s|DB_USER|${{ secrets.DB_USER }}|g" cloud-run-service.yaml
-          sed -i "s|DB_PASSWORD|${{ secrets.DB_PASSWORD }}|g" cloud-run-service.yaml
-          sed -i "s|DB_NAME|${{ secrets.DB_NAME }}|g" cloud-run-service.yaml
+          sed -i "s|'DB_USER'|'${{ secrets.DB_USER }}'|g" cloud-run-service.yaml
+          sed -i "s|'DB_PASSWORD'|'${{ secrets.DB_PASSWORD }}'|g" cloud-run-service.yaml
+          sed -i "s|'DB_NAME'|'${{ secrets.DB_NAME }}'|g" cloud-run-service.yaml
           sed -i "s|LOKI_HOST|${{ secrets.LOKI_HOST }}|g" cloud-run-service.yaml
           sed -i "s|\"LOKI_PORT\"|\"${{ secrets.LOKI_PORT }}\"|g" cloud-run-service.yaml
           
