@@ -19,6 +19,8 @@ spec:
         ports:
         - containerPort: 80
         env:
+        - name: PORT
+          value: '3000'
         - name: DB_HOST
           value: '127.0.0.1'
         - name: DB_USER
@@ -58,3 +60,9 @@ spec:
           limits:
             cpu: '0.5'
             memory: 256Mi
+        volumeMounts:
+        - name: logs
+          mountPath: /var/logs/crud
+      volumes:
+      - name: logs
+        emptyDir: {}

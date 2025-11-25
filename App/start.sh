@@ -6,7 +6,9 @@ mkdir -p /var/logs/crud
 
 # Lancer l'application Node en arrière-plan
 echo "Démarrage de Node.js..."
-nohup node index.js > /var/logs/crud/app.log 2>&1 &
+node index.js &
+
+sleep 2
 
 # Lancer Nginx au premier plan
 echo "Démarrage de Nginx..."
